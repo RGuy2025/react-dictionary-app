@@ -1,0 +1,22 @@
+:root {
+  --first-color: #ebebe3;
+  --second-color: #2b2b28;
+  --third-color: #4a4a48;
+  --fourth-color: #c19898;
+}
+
+.Results {
+  background-color: var(--fourth-color);
+}
+.WordResult{
+  border: 1px solid var(--fourth-color);
+  background-color: var(--third-color);
+  border-radius: 5px;
+  margin: 30px 300px;
+}
+.Meaning {
+  border: 1px solid var(--fourth-color);
+  border-radius: 5px;
+  margin: 20px 250px;
+  background-color: var(--third-color);
+}

@@ -1,0 +1,22 @@
+:root {
+  --first-color: #ebebe3;
+  --second-color: #2b2b28;
+  --third-color: #4a4a48;
+  --fourth-color: #c19898;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--fourth-color);
+  
+}
+input {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  background-color: var(--first-color);
+  border: 1px solid var(--second-color);
+  border-radius: 5px;
+}
