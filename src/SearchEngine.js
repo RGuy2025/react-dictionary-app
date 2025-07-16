@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./SearchEngine.css";
+import Results from "./Results";
 
 export default function SearchEngine() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data);
+    
+    setResults(response.data);
   }
 
   function search(event) {
@@ -29,6 +33,7 @@ export default function SearchEngine() {
           placeholder="Search for a word..."
         />
       </form>
+      <Results results={results} />
     </div>
   );
 }
