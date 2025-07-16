@@ -7,6 +7,7 @@ export default function SearchEngine() {
 
   function search(event) { 
     event.preventDefault();
+    alert (`Searching for: ${keyword}`);
   }
   
   function handleKeywordChange(event) { 
