@@ -1,29 +1,33 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./SearchEngine.css";
 
 export default function SearchEngine() {
-
   let [keyword, setKeyword] = useState("");
 
-  function search(event) { 
-    event.preventDefault();
-    alert (`Searching for: ${keyword}`);
+  function handleResponse(response) {
+    console.log(response.data);
   }
-  
-  function handleKeywordChange(event) { 
+
+  function search(event) {
+    event.preventDefault();
+
+    let apiKey = "5912o91beb33d634bfd91ta0a18fa0bd";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleKeywordChange(event) {
     setKeyword(event.target.value);
-    
   }
   return (
     <div className="SearchEngine">
       <form onSubmit={search}>
         <input
           type="search"
-          onChange= { handleKeywordChange }
+          onChange={handleKeywordChange}
           placeholder="Search for a word..."
-          
         />
-       
       </form>
     </div>
   );
