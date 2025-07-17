@@ -5,6 +5,7 @@ import Phonetics from "./Phonetics";
 import "./Results.css";
 
 export default function Results(props) {
+  
   if (props.results) {
     return (
       <div className="Results">
@@ -12,14 +13,17 @@ export default function Results(props) {
           <h2 className="text-capitalize">{props.results.word}</h2>
           <Phonetics phonetic={props.results.phonetic} />
         </div>
-
-        {props.results.meanings.map(function (meaning, index) {
-          return (
-            <div className="Meaning" key={index}>
-              <Meaning meaning={meaning} />
-            </div>
-          );
-        })}
+        <div className="row">
+          {props.results.meanings.map(function (meaning, index) {
+            return (
+              <div className="col-6" key={index}>
+                <div className="Meaning">
+                  <Meaning meaning={meaning} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   } else {

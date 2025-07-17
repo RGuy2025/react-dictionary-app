@@ -24,7 +24,7 @@ function App() {
           <a
             href="https://github.com/RGuy2025"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
           >
             Github
           </a>
