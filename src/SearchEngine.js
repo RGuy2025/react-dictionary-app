@@ -11,6 +11,7 @@ export default function SearchEngine(props) {
   let [photos, setPhotos] = useState(null);
 
   function handleDictionaryResponse(response) {
+    
     setResults(response.data);
   }
   function handlePhotosResponse(response) {
