@@ -12,7 +12,22 @@ function App() {
         </header>
         <SearchEngine />
         <footer>
-          Coded by Rachel Guyett and is opensourced on Github
+          Coded by{" "}
+          <a
+            href="https://www.shecodes.io/graduates/138591-rachel-guyett"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Rachel Guyett
+          </a>{" "}
+          and is opensourced on{" "}
+          <a
+            href="https://github.com/RGuy2025"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
         </footer>
       </div>
     </div>
