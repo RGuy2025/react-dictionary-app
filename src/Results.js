@@ -5,8 +5,7 @@ import Phonetics from "./Phonetics";
 import "./Results.css";
 
 export default function Results(props) {
-  
-  if (props.results) {
+  if (props.results.word) {
     return (
       <div className="Results">
         <div className="WordResult text-center">
@@ -27,6 +26,6 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return null;
+    return <h2> Sorry. Word not found. </h2>;
   }
 }
