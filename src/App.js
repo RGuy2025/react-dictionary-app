@@ -10,7 +10,7 @@ function App() {
           <img src={shecodes} className="logo img-fluid" alt="logo" />
           <span className="DictionaryTitle"> React Dictionary Webpage</span>
         </header>
-        <SearchEngine />
+        <SearchEngine defaultKeyword="Hello" />
         <footer>
           Coded by{" "}
           <a
