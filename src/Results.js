@@ -5,8 +5,8 @@ import Phonetics from "./Phonetics";
 import "./Results.css";
 
 export default function Results(props) {
-  console.log(props.results);
-  if (props.results) {
+  
+  if (props.results.word) {
     return (
       <div className="Results">
         <div className="WordResult text-center">

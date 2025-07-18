@@ -6,7 +6,7 @@ import Photos from "./Photos";
 
 export default function SearchEngine(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
-  let [results, setResults] = useState(null);
+  let [results, setResults] = useState({});
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
